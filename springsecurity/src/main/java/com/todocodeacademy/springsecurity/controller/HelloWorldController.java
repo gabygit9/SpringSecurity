@@ -13,8 +13,8 @@ import java.util.List;
 public class HelloWorldController {
 
     @GetMapping("/holasec")
-    //@PreAuthoriza("hasAuthority('READ')")
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasAuthority('READ')")
+    //@PreAuthorize("hasRole('ADMIN')")
     public String secHelloWorld() {
         return "Con seguridad";
     }
